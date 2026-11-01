@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aura Boutique - Iniciar sesión</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Playfair+Display:wght@400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --fondo: #F4EFE6;
+    --verde-oscuro: #2C3E35;
+    --salvia: #8A9A86;
+    --arena: #C89D7C;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body {
+    font-family: "Playfair Display", Georgia, serif;
+    background: #e8e2d6;
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+  }
+  .pantalla {
+    width: 402px;
+    max-width: 100%;
+    min-height: 844px;
+    background: var(--fondo);
+    border-radius: 10px;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 72px 0 48px;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    padding: 0 16px;
+  }
+  .logo .linea { width: 110px; height: 1px; background: var(--arena); flex-shrink: 1; }
+  .logo span {
+    width: 77px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--verde-oscuro);
+    line-height: normal;
+  }
+  h1 {
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--salvia);
+    text-align: center;
+    margin: 56px 0 40px;
+  }
+  form {
+    width: 266px;
+    max-width: calc(100% - 32px);
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+  label {
+    display: block;
+    font-size: 20px;
+    color: var(--salvia);
+  }
+  input {
+    display: block;
+    width: 100%;
+    margin-top: 12px;
+    padding: 0 0 8px;
+    border: 0;
+    border-bottom: 1px solid var(--arena);
+    background: transparent;
+    font: inherit;
+    font-size: 14px;
+    color: var(--verde-oscuro);
+    border-radius: 0;
+  }
+  input::placeholder { color: var(--verde-oscuro); opacity: .5; }
+  input:focus-visible { outline: 2px solid var(--arena); outline-offset: 4px; }
+  button {
+    width: 100%;
+    margin-top: 12px;
+    padding: 12px;
+    background: var(--arena);
+    border: 1px solid var(--arena);
+    border-radius: 8px;
+    color: var(--salvia);
+    font-family: "Inter", system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 100%;
+    cursor: pointer;
+  }
+  button:focus-visible { outline: 2px solid var(--verde-oscuro); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<main class="pantalla">
+  <div class="logo" role="img" aria-label="Aura Boutique">
+    <div class="linea"></div>
+    <span>AURA<br>BOUTIQUE</span>
+    <div class="linea"></div>
+  </div>
+
+  <h1>INICIAR SESIÓN</h1>
+
+  <form>
+    <div>
+      <label for="email">EMAIL</label>
+      <input id="email" type="email" name="email" placeholder="EMAIL" autocomplete="email" required>
+    </div>
+    <div>
+      <label for="password">CONTRASEÑA</label>
+      <input id="password" type="password" name="password" placeholder="CONTRASEÑA" autocomplete="current-password" required>
+    </div>
+    <button type="submit" onclick="document.location='file:///C:/Users/PC-01/Documents/DSDSF/Aura%20Boutique/Proyecto/perfil.html'">ACCEDER</button>
+  </form>
+</main>
+</body>
+</html>
